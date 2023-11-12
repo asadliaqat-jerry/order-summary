@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/* Colors */
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Red Hat Dsiplay", sans-serif;
+  font-size: 16px;
+  background-color: var(--Pale-blue);
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  background-color: var(--Very-pale-blue);
+  border-radius: 1.5rem;
+  margin: 7rem 1.5rem;
+}
+.container header img {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.container article h1 {
+  text-align: center;
+  margin: 1.5rem auto 2rem;
+  font-weight: 900;
+}
+.container article p {
+  text-align: center;
+  font-weight: 500;
+  color: var(--Desaturated-blue);
+  margin: 0 5.5rem 0;
+}
+.container #article-price {
+  margin: 1.5rem;
+  background-color: hsl(225, 100%, 94%, 45%);
+  height: 4.5rem;
+}
+.container #article-price ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container #article-price ul li {
+  list-style: none;
+  margin: 1rem 1.9rem;
+}
+.container #article-price ul li span {
+  font-weight: 700;
+}
+.container #article-price ul li #span2 {
+  font-weight: 500;
+  margin-left: 0.2rem;
+}
+.container #article-price ul li a:hover{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.container footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container footer button:first-child {
+  margin: 2rem 2rem 1.1rem;
+  font-size: 700;
+  border: none;
+  background-color: var(--Bright-blue);
+  color: var(--Very-pale-blue);
+  padding: 1.2rem;
+  width: calc(100% - 100px);
+  border-radius: 1rem;
+}
+.container footer button:first-child:hover {
+  background-color: hsl(245, 75%, 52%, 52%);
+  cursor: pointer;
+}
+.container footer button:nth-child(2) {
+  border: none;
+  padding-bottom: 1.5rem;
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+}
+.container footer button:nth-child(2):hover {
+  color: hsl(228, 10%, 30%);
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .container {
+    width: 450px;
+    margin: 5rem auto 1rem;
+  }
+  .attribution {
+    margin: 0 auto;
+  }
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
